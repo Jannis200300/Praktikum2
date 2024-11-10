@@ -46,6 +46,25 @@ int str2int(char const str[]) {
 
 /* Schreibt die Binaerdarstellung der Ganzzahl i in die Zeichenkette str */
 void int2Binaer(int i, char str[]) {
+    int index = 0;
+    // Wenn i 0 ist, setzen wir str auf "0"
 
+    if (i == 0) {
+        str[index++] = '0';
+    } else {
+        // Für eine positive Zahl oder negative Zahl stellen wir den Binaerwert umgekehrt dar
+        int bit;
+        for (bit = 31; bit >= 0; bit--) {
+            // Testen des jeweiligen Bits von i
+            if ((i >> bit) & 1) {
+                str[index++] = '1';
+            } else {
+                str[index++] = '0';
+            }
+        }
+    }
+
+    // Nullterminator für die Zeichenkette
+    str[index] = '\0';
 
 }
