@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Praktikum2.exe"
-		},
-		{
-			"path" : "Praktikum2.pdb"
+			"path" : "Praktikum2"
 		}
 	],
 	"backtrace" : 1,
@@ -100,16 +97,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
 	"name" : "Praktikum2",
-	"nameOnDisk" : "Praktikum2.exe",
+	"nameOnDisk" : "Praktikum2",
 	"paths" : 
 	{
 		"build" : ".",

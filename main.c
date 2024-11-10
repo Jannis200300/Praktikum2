@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "zahlen.h"
 
-int main (int const argc, char** argv[]) {
+int main (int const argc, char* argv[]) {
     /* Puffer fuer die Ausgabezeichenkette mit Platz fuer Nullterminator */
     char puffer[DIGITS+1];
     int zahl;
@@ -12,7 +12,7 @@ int main (int const argc, char** argv[]) {
         printf("%s Aufrufen mit einer Zahl zwischen 0 und %d \n",argv[0], MAXZAHL);
         return EXIT_FAILURE;
     }
-    printf("Eingabezeichenkette: \"%s\" \n", argv[1]);#
+    printf("Eingabezeichenkette: \"%s\" \n", argv[1]);
 
     /*Zeichenkette in eine int Zahl umrechnen */
     zahl = str2int(argv[1]);
